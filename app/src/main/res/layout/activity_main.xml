@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F1F1F1"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+  <RelativeLayout
+      android:padding="10dp"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_centerVertical="true"
+        android:text="Hola Ignacio, buenos dias!"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/image_suer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:src="@drawable/avatar"
+        android:id="@+id/image_suer"
+        android:layout_alignParentEnd="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+  </RelativeLayout>
+
+  <androidx.cardview.widget.CardView
+      app:cardCornerRadius="10dp"
+      app:cardElevation="5dp"
+      android:layout_margin="20dp"
+      app:contentPadding="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="48dp">
+    <EditText
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:background="@drawable/background_input"
+        android:textColorHint="#8F8F8F"
+        android:hint="Buscar una Visita"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+  </androidx.cardview.widget.CardView>
+
+  <TextView
+      android:layout_marginBottom="10dp"
+      android:textSize="16dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginTop="10dp"
+      android:textColor="#333"
+      android:text="Tienes 2 visitas en el dia"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/list_places"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+</LinearLayout>
