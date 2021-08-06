@@ -15,7 +15,7 @@ import org.jetbrains.anko.uiThread
 
 import javax.inject.Inject
 
-class LoginViewModel @Inject constructor(private val pricesDB: PlacesDao) : ViewModel() {
+class MainViewModel @Inject constructor(private val pricesDB: PlacesDao) : ViewModel() {
     var job: Job? = null
     val errorMessage = MutableLiveData<Boolean>()
 

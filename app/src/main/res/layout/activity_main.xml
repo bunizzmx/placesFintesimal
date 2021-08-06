@@ -99,10 +99,22 @@
     </LinearLayout>
 
   </androidx.cardview.widget.CardView>
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <ProgressBar
+      android:id="@+id/progres_places"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:layout_width="20dp"
+      android:layout_height="20dp"/>
   <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/list_places"
       android:layout_width="match_parent"
       android:layout_height="match_parent"/>
+</RelativeLayout>
+
+
+
 
 </LinearLayout>

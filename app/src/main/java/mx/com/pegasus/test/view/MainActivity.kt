@@ -8,7 +8,6 @@ import android.text.Html
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
-import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
@@ -21,13 +20,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 import mx.com.pegasus.test.R
 import mx.com.pegasus.test.view.adapter.PlacesAdapter
 import mx.com.pegasus.test.view.fragments.MapFragment
-import mx.com.pegasus.test.viewmodel.LoginViewModel
+import mx.com.pegasus.test.viewmodel.MainViewModel
 import javax.inject.Inject
 
 class MainActivity : DaggerAppCompatActivity() {
 
     @Inject
-    lateinit var viewModelSignUp: LoginViewModel
+    lateinit var viewModelSignUp: MainViewModel
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
@@ -40,7 +39,7 @@ class MainActivity : DaggerAppCompatActivity() {
         setContentView(R.layout.activity_main)
         setUpRecyclerView();
 
-        viewModelSignUp = ViewModelProviders.of(this, viewModelFactory).get(LoginViewModel::class.java)
+        viewModelSignUp = ViewModelProviders.of(this, viewModelFactory).get(MainViewModel::class.java)
         viewModelSignUp.dogImages.observe(this, Observer { flowTo ->
             mAdapter.RecyclerAdapter(flowTo, this, object : onClickItem {
                 override fun onPlaceClick(
@@ -66,6 +65,7 @@ class MainActivity : DaggerAppCompatActivity() {
 
             })
             mRecyclerView.adapter = mAdapter
+            progres_places.visibility  =View.GONE
             viewModelSignUp.saveLocalData(flowTo)
         })
         viewModelSignUp.visitedAll.observe(this, { flowTo ->
@@ -94,7 +94,6 @@ class MainActivity : DaggerAppCompatActivity() {
         }
 
         viewModelSignUp.errorMessage.observe(this, { flowTo ->
-            Log.e("LOCALDATA","-->" + flowTo)
             if(flowTo){
                 viewModelSignUp.getLocalData()
             }else{
