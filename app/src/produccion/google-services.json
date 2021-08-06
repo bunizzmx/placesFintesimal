@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "119415358830",
+    "firebase_url": "https://tpv-1138.firebaseio.com",
+    "project_id": "tpv-1138",
+    "storage_bucket": "tpv-1138.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119415358830:android:b60f5b95709913d6",
+        "android_client_info": {
+          "package_name": "mx.com.pegasus.puntodeventa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119415358830-o4kdjmqsh2mdhkbtmmqkmoij1gifrjk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4d1gus4qTqbiiZj4596de-PCgvnfdQHc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

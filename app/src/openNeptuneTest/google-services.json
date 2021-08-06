@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "229079644591",
+    "firebase_url": "https://neptune505-1135.firebaseio.com",
+    "project_id": "neptune505-1135",
+    "storage_bucket": "neptune505-1135.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229079644591:android:7aa8df1abb6235a719d75a",
+        "android_client_info": {
+          "package_name": "mx.com.pegasus.neptune.trock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229079644591-jfkckikrfm04oo49uhn2ng8sgq8mkug6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3i42HSyta2_tCFVzQO7nFBbi2J2oehQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229079644591-jfkckikrfm04oo49uhn2ng8sgq8mkug6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

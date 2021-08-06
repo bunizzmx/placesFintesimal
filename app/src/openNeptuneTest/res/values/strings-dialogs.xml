@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="textRequestLimitReach">Haz alcanzado el limite de peticiones en este dispositivo,
+        para continuar utilizando Neptune 505 favor de adquirir otro paquete de peticiones.</string>
+    <string name="textContractRi5052014">Contrato enviado al Ne505</string>
+
+    <string name="textUpdateMainBody">Reprogramacion de Ne505. ¿Quieres continuar con la operacion?</string>
+    <string name="textUpdateMainSuccess">Ne505A Actualizado! Se puede operar con normalidad</string>
+    <string name="textUpdateMainError">Error al actualizar Ne505, Intente de nuevo.</string>
+    <string name="textUpdateMainSearch">Emparejando con Ne505…</string>
+
+    <string name="textTicketSearching">Conectando con dispositivo Ne505</string>
+    <string name="textTicketConnected">Cargando ticket a dispositivo Ne505</string>
+    <string name="textTicketTitle">Cargar ticket al Ne505</string>
+
+    <string name="textLicenceValidUnit">Licencia vencida, contactese con el departamento de ventas
+        para seguir usando Neptune 505.</string>
+    
+    <string name="textVersionPage">https://www.pegasus.com.mx/es/distribucion/software-es/sgc-open-es/</string>
+    
+    <string name="textUpdateAvailable">El dispositivo Ne505 requiere de una actualización, ¿Deseas continuar?</string>
+</resources>

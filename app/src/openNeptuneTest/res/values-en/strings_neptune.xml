@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" transladable="false">Neptune 505</string>
+    
+    <string name="mig_recover_2015">Recover Ne505 A 2015 OX</string>
+    <string name="mig_recover_kaa">Recover Ne505 A KAA</string>
+    
+    <string name="singleMessageReports">Neptune 505 Reports</string>
+    <string name="singleMessageRegister">Neptune 505 Register</string>
+    <string name="singleMessageLogin">Neptune 505 Login</string>
+    <string name="singleMessageMain">Neptune 505 Menu</string>
+    <string name="singleMessageSales">Neptune 505 Sales</string>
+    <string name="singleMessageConfiguration">Neptune 505 Settings</string>
+    
+    <!-- Buttons -->
+    
+    <string name="buttonLoadTicket">Load ticket to Ne</string>
+    
+    <!-- Views -->
+    <string name="textViewRegister">Sign up for free and start living the Neptune 505 experience.</string>
+    
+    <string name="textViewRiConfigurationRequired">Configure a Ne505 device to proceed with this action.</string>
+    <string name="textViewRiReportsRequired">Configure Ne505 device to proceed to view events and services.</string>
+    
+    <string name="textViewConnectionLostRi">Could not connect to the Ne505 unit, if the problem persists, restart the application or the unit.</string>
+    
+    <string name="textViewMessageLoadingData">Prices will be loaded to your configured Ne505.</string>
+    
+    <string name="textViewRiNotConnected">Add your Ne505 or select the unit you want to connect.</string>
+    
+    <string name="textViewNoRi">Ne505 has not been configured.</string>
+    <string name="textViewRiConfigHeader">Ne505</string>
+    
+    <string name="textViewRiVersionAbout">Ne505 Version</string>
+    
+    <string name="textViewNullConnection">Connection lost with Ne505, try again. If the problem persist try to restart phone bluetooth.</string>
+    
+    <!--Snackbar-->
+    <string name="textSnackbarRi505">Do you want to connect to Ne505 Unit?</string>
+    
+    <string name="no_ri505_found_dialog_msg">Ne505 not available in your area.</string>
+</resources>

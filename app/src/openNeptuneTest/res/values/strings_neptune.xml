@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" transladable="false">Neptune 505</string>
+    
+    <string name="mig_recover_2015">Recuperar Ne505 A 2015 OX</string>
+    <string name="mig_recover_kaa">Recuperar Ne505 A KAA</string>
+    
+    <string name="singleMessageReports">Reportes Neptune 505</string>
+    <string name="singleMessageRegister">Registro Neptune 505</string>
+    <string name="singleMessageLogin">Login Neptune 505</string>
+    <string name="singleMessageMain">Menu Neptune 505</string>
+    <string name="singleMessageSales">Ventas Neptune 505</string>
+    <string name="singleMessageConfiguration">Configuración Neptune 505</string>
+    
+    <!-- Buttons -->
+    
+    <string name="buttonLoadTicket">Cargar Ticket al Ne</string>
+    
+    <!-- Views -->
+    <string name="textViewRegister">Realiza tu registro totalmente gratis y comienza a vivir la experiencia Neptune 505.</string>
+    
+    <string name="textViewRiConfigurationRequired">Configura un dispositivo Ne505 para proceder con esta acción.</string>
+    <string name="textViewRiReportsRequired">Configura un dispositivo Ne505 para proceder ver los eventos y servicios.</string>
+    
+    <string name="textViewConnectionLostRi">No se pudo conectar con la unidad Ne505, si el problema persiste reinicie la aplicación o la unidad.</string>
+    
+    <string name="textViewMessageLoadingData">Se cargaran los precios registrados a tu Ne505 configurado.</string>
+    
+    <string name="textViewRiNotConnected">Registra tu unidad Ne505 o selecciona la unidad a la que te quieres conectar.</string>
+    
+    <string name="textViewNoRi">No has configurado un Ne505</string>
+    <string name="textViewRiConfigHeader">Ne505</string>
+    
+    <string name="textViewRi505NoConnectionMessage">No hay conexion con Ne.</string>
+    
+    <string name="textViewRiVersionAbout">Version del Ne505</string>
+    
+    <string name="textViewNullConnection">Conexión perdida con el Ne505, intente de nuevo, si el problema persiste intente reiniciar el modulo bluetooth.</string>
+    
+    <string name="textViewAuthorizedOperation">Servicio enviado a la unidad Ne505</string>
+    <string name="textViewFindingYourDevice">Selecciona tu Ne505</string>
+    
+    <!--Menu-->
+    <string name="menuItemAboutAPP">Acerca de Neptune 505</string>
+    
+    <!--Snackbar-->
+    <string name="textSnackbarRi505">¿Quieres continuar con la conexión de un Ne505?</string>
+    <string name="no_ri505_found_dialog_msg">Unidad Ne505 no disponibles en tu area.</string>
+</resources>
