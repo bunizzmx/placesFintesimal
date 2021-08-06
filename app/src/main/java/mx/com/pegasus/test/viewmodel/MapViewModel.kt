@@ -1,6 +1,5 @@
 package mx.com.pegasus.test.viewmodel
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 import mx.com.pegasus.test.model.dao.PlacesDao
@@ -10,25 +9,13 @@ import org.jetbrains.anko.uiThread
 import javax.inject.Inject
 
 class MapViewModel @Inject constructor(private val pricesDB: PlacesDao) : ViewModel() {
-    val errorMessage = MutableLiveData<String>()
-
-    public val dogImages = MutableLiveData<ArrayList<DbPlaces>>()
-
-     fun updatePlace(dbPlaces: DbPlaces) {
+    // ESTE METODO SOLO SE ENCARGA DE HACER EL UPDATE DE LA VISITA
+    fun updatePlace(dbPlaces: DbPlaces) {
         doAsync {
-            pricesDB.updatePrices(dbPlaces)
-            uiThread {
-
-            }
+            pricesDB.updatePlaces(dbPlaces)
+            uiThread { }
         }
-
     }
-
-
-
-
-
-
     override fun onCleared() {
         super.onCleared()
     }

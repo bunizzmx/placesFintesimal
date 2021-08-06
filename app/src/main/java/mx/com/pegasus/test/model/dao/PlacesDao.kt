@@ -7,19 +7,17 @@ import mx.com.pegasus.test.model.database.DbPlaces
 @Dao
 interface PlacesDao {
     @Query("SELECT * FROM DbPlaces ORDER BY id ASC")
-    fun getPrices(): MutableList<DbPlaces>
+    fun getPlaces(): MutableList<DbPlaces>
 
-    @Query("SELECT * FROM DbPlaces WHERE id == :LastInserted")
-    fun getPricesLastInserted(LastInserted: Long): DbPlaces
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertPrices(dbPlaces: DbPlaces): Long
+    fun insertPlace(dbPlaces: DbPlaces): Long
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertListFB(precios: List<DbPlaces>)
+    fun insertAllPlaces(precios: List<DbPlaces>)
 
     @Update
-    fun updatePrices(dbPlaces: DbPlaces)
+    fun updatePlaces(dbPlaces: DbPlaces)
 
     @Query("DELETE FROM DbPlaces")
     fun deleteAll()
