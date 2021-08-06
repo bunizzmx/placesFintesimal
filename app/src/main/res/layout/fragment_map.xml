@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -10,13 +11,24 @@
         android:id="@+id/map"
         tools:context=".view.fragments.MapFragment"
         android:name="com.google.android.gms.maps.SupportMapFragment" />
-
+    <RelativeLayout
+        android:background="@drawable/gradient_white"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/back_activity"
+           android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_nav_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </RelativeLayout>
     <androidx.cardview.widget.CardView
         app:cardCornerRadius="10dp"
         android:layout_margin="20dp"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="130dp">
+        android:layout_height="wrap_content">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -35,13 +47,14 @@
                 android:layout_width="10dp"
                 android:layout_height="10dp"/>
             <LinearLayout
+                android:layout_marginBottom="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_toRightOf="@id/point"
-                android:layout_toLeftOf="@id/arrow"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:layout_marginTop="10dp"
                     android:textSize="11sp"
                     android:id="@+id/status_label_map"
                     android:layout_width="wrap_content"
@@ -59,20 +72,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
-            <ImageView
-                android:layout_marginEnd="10dp"
-                android:id="@+id/arrow"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_arrow"
-                android:layout_width="10dp"
-                android:layout_height="10dp"/>
         </RelativeLayout>
             <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/buttons_visit"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <Button
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
                     android:id="@+id/to_position"
                     android:layout_margin="15dp"
                     android:background="@drawable/button_fill"
@@ -81,14 +90,17 @@
                     android:layout_width="115dp"
                     android:layout_height="wrap_content"/>
                 <Button
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
                     android:id="@+id/visited_place"
-                    android:layout_margin="15dp"
+                    android:layout_marginTop="15dp"
                     android:background="@drawable/button_stroke"
                     android:textColor="#3ac2c2"
                     android:text="Realizar Visita"
-                    android:layout_width="175dp"
+                    android:layout_width="165dp"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </RelativeLayout>

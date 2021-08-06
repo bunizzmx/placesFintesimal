@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#F1F1F1"
+    android:background="#F8F8F8"
     android:padding="10dp"
     android:orientation="vertical"
     android:layout_height="match_parent"
@@ -15,6 +15,9 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
     <TextView
+        android:fontFamily="@font/roboto_r"
+        android:layout_marginStart="10dp"
+        android:id="@+id/hello_user"
         android:layout_centerVertical="true"
         android:text="Hola Ignacio, buenos dias!"
         android:layout_alignParentStart="true"
@@ -22,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <ImageView
+        android:layout_marginEnd="10dp"
         android:src="@drawable/avatar"
         android:id="@+id/image_suer"
         android:layout_alignParentEnd="true"
@@ -36,12 +40,14 @@
       app:contentPadding="10dp"
       android:layout_width="match_parent"
       android:layout_height="48dp">
+
     <EditText
+        android:id="@+id/search_item"
         android:layout_marginStart="10dp"
         android:textSize="12dp"
         android:background="@drawable/background_input"
         android:textColorHint="#8F8F8F"
-        android:hint="Buscar una Visita"
+        android:hint="Busca una visita"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
   </androidx.cardview.widget.CardView>
@@ -56,6 +62,43 @@
       android:text="Tienes 2 visitas en el dia"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"/>
+  <androidx.cardview.widget.CardView
+      android:layout_marginTop="20dp"
+      app:cardCornerRadius="10dp"
+      android:visibility="gone"
+      android:id="@+id/card_visited_all"
+     app:contentPadding="20dp"
+      app:cardBackgroundColor="#fdfdfd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:layout_margin="10dp"
+          android:layout_gravity="center_horizontal"
+          android:src="@drawable/ic_marker"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          app:tint="#3ac2c2" />
+      <TextView
+          android:textColor="#333"
+          android:textSize="14sp"
+          android:layout_gravity="center_horizontal"
+          android:text="!Wow! estas al dia con tus visitas"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <TextView
+          android:textColor="#7c839d"
+          android:textSize="12sp"
+          android:layout_gravity="center_horizontal"
+          android:text="Te avisaremos cuando haya mas"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
 
   <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/list_places"
